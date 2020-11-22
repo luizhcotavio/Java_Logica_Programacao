@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class CalculaAposentadoria {
 	static final Double IDADE_MINIMA_PARA_APOSENTAR = 55.0;
-	static final Double TEMPO_MINIMO_CONTRIBUICA_PARA_APOSENTAR = 25.0;
+	static final Double TEMPO_MINIMO_CONTRIBUICAO_PARA_APOSENTAR = 25.0;
 	
 	public static void main(String[] args) {
 		// idadePessoa >= 55 && contribuicao >25
@@ -15,13 +15,13 @@ public class CalculaAposentadoria {
 		System.out.println("Entre com a sua idade: ");
 		IDADE_PESSOA = leia.nextDouble();
 		
-		System.out.println("Entre com o tempo de contribuição: ");
+		System.out.println("Entre com o tempo de contribuiÃ§Ã£o: ");
 		TEMPO_DE_CONTRIBUICAO = leia.nextDouble();
 		
-		if(IDADE_PESSOA >= IDADE_MINIMA_PARA_APOSENTAR && TEMPO_DE_CONTRIBUICAO >= TEMPO_MINIMO_CONTRIBUICA_PARA_APOSENTAR) {
+		if(IDADE_PESSOA >= IDADE_MINIMA_PARA_APOSENTAR && TEMPO_DE_CONTRIBUICAO >= TEMPO_MINIMO_CONTRIBUICAO_PARA_APOSENTAR) {
 			System.out.println("Pode Aposentar");
 		}else {
-			System.out.println("Não pode aposentar");
+			System.out.println("NÃ£o pode aposentar");
 		}
 		leia.close();
 		
