@@ -8,19 +8,15 @@ public class CalculaMediaConcursoPublico {
 			
 	public static void main(String[] args) {
 		
-		//Calcular Media entre duas provas. Portugues e Matemática.
-		//Prova no total vale 200 pontos, sendo 100 para cada matéria.
-		//Nota Mínima total >= 150
-		//Não pode tirar < 60 pontos em qualquer uma das 2 materias que
-		//ele reprova
+	
 		
 		Scanner leia = new Scanner(System.in);
 		
 		
-		System.out.println("Nota da Matéria de Português: ");
+		System.out.println("Nota da MatÃ©ria de PortuguÃªs: ");
 		Double NOTA_MATERIA_PORTUGUES = leia.nextDouble();
 		
-		System.out.println("Nota da Matéria de Matemática: ");
+		System.out.println("Nota da MatÃ©ria de MatemÃ¡tica: ");
 		Double NOTA_MATERIA_MATEMATICA = leia.nextDouble();
 		
 				
@@ -30,9 +26,9 @@ public class CalculaMediaConcursoPublico {
 		
 		
 		if(APROVADO_NA_PONTUACAO_MINIMA_DE_CADA_MATERIA && APROVADO_NA_PONTUACAO_TOTAL) {
-			System.out.println("Parabéns, você passou no concurso.");
+			System.out.println("ParabÃ©ns, vocÃª passou no concurso.");
 		}else {
-			System.out.println("Infelizmente você não passou no concurso.");
+			System.out.println("Infelizmente vocÃª nÃ£o passou no concurso.");
 		}
 		leia.close();
 	}
