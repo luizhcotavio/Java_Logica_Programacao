@@ -25,7 +25,7 @@ public class CadastroDeTarefas {
 		i++;
 		}
 		
-		
+		leia.close();
 
 	}
 
