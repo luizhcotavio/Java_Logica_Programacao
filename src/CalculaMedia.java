@@ -10,11 +10,11 @@ public class CalculaMedia {
 		Scanner leia = new Scanner(System.in);
 		
 		System.out.print("Entre com a nota: ");
-		double VALOR_DA_NOTA = leia.nextDouble();
+		double valorDaNota = leia.nextDouble();
 		
-		boolean VERIFICA_NOTA_MAIOR_QUE_MEDIA = VALOR_DA_NOTA> VALOR_MEDIA;
+		boolean verificaNotaMaiorQueMedia = valorDaNota> VALOR_MEDIA;
 		
-		if(VERIFICA_NOTA_MAIOR_QUE_MEDIA) {
+		if(verificaNotaMaiorQueMedia) {
 			System.out.println("Aluno Aprovado.");
 		}else {
 			System.out.println("Aluno Reprovado");
