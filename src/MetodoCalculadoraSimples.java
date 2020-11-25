@@ -35,19 +35,33 @@ public static void main(String[] args) {
 	System.out.print("Entre com o segundo numero: ");
 	segundoNumero = leia.nextDouble();
 	
-	System.out.println("\nSelecione o numero que condiz com a  operaÁ„o que deseja realizar: "
-			+ "\n 1) Soma \n 2) SubtraÁ„o \n 3) Divis„o \n 4) MultiplicaÁ„o \n 5) Sair ");
+	System.out.println("\nSelecione o numero que condiz com a  opera√ß√£o que deseja realizar: "
+			+ "\n 1) Soma \n 2) Subtra√ß√£o \n 3) Divis√£o \n 4) Multiplica√ß√£o \n 5) Sair ");
 	operacaoEscolhida = leia.nextByte();
+		
+			while(segundoNumero==0 && operacaoEscolhida==3) {
+		
+		System.out.print("\n\n N√£o existe divis√£o por zero. Tente novamente. \n Entre com o primeiro numero: ");
+		primeiroNumero = leia.nextDouble();
+		
+		System.out.print("Entre com o segundo numero: ");
+		segundoNumero = leia.nextDouble();
+		
+		System.out.println("\nSelecione o numero que condiz com a  opera√ß√£o que deseja realizar: "
+				+ "\n 1) Soma \n 2) Subtra√ß√£o \n 3) Divis√£o \n 4) Multiplica√ß√£o \n 5) Sair ");
+		operacaoEscolhida = leia.nextByte();
+		
+	}
 	
 		
 			switch(operacaoEscolhida) {
 			
-			case 1: System.out.println("O resultado da soma ser·: " + soma(primeiroNumero, segundoNumero)); break;
-			case 2: System.out.println("O resultado da subtraÁ„o ser·: " + subtracao(primeiroNumero, segundoNumero)); break;
-			case 3: System.out.println("O resultado da divis„o ser·: " + divisao(primeiroNumero, segundoNumero)); break;
-			case 4: System.out.println("O resultado da multiplicaÁ„o ser·: " + multiplicacao(primeiroNumero, segundoNumero)); break;
+			case 1: System.out.println("O resultado da soma ser√°: " + soma(primeiroNumero, segundoNumero)); break;
+			case 2: System.out.println("O resultado da subtra√ß√£o ser√°: " + subtracao(primeiroNumero, segundoNumero)); break;
+			case 3: System.out.println("O resultado da divis√£o ser√°: " + divisao(primeiroNumero, segundoNumero)); break;
+			case 4: System.out.println("O resultado da multiplica√ß√£o ser√°: " + multiplicacao(primeiroNumero, segundoNumero)); break;
 			case 5: System.out.println("Obrigado, volte sempre"); break;
-			default:System.err.println("OpÁ„o inv·lida. Digite um n˙mero entre 1 e 5. ");
+			default:System.err.println("Op√ß√£o inv√°lida. Digite um n√∫mero entre 1 e 5. ");
 					System.exit(1);	
 			
 				
